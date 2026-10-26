@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Member Area | Pristine Luxes Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.jpeg" alt="Pristine Luxes Hub Logo">
+
+            <div>
+                <h1>Pristine Luxes Hub</h1>
+                <p>Look Good, Feel Good and Be Pristine</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services &amp; Products</a>
+            <a href="booking.html">Booking &amp; Appointment</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="memberWelcome">
+            <h2>Welcome to Your Member Area</h2>
+
+            <p>
+                Welcome to Pristine Luxes Hub! Explore our beauty products,
+                select your preferred service, or book an appointment.
+            </p>
+
+            <p id="memberMessage"></p>
+        </section>
+        <section id="memberProducts">
+            <h2>Our Beauty Products</h2>
+
+            <div class="product-container">
+
+                <article class="product-card">
+                    <img src="image/shampoo.webp"
+                         alt="Hair Shampoo"
+                         loading="lazy">
+
+                    <h3>Hair Shampoo</h3>
+                    <p>Price: ₦3,500</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Hair Shampoo"
+                        data-type="product">
+                        Order Product
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="image/hair oil.webp"
+                         alt="Hair Cream"
+                         loading="lazy">
+
+                    <h3>Hair Cream</h3>
+                    <p>Price: ₦2,500</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Hair Cream"
+                        data-type="product">
+                        Order Product
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="image/hair oil.webp"
+                         alt="Hair Oil"
+                         loading="lazy">
+
+                    <h3>Hair Oil</h3>
+                    <p>Price: ₦2,000</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Hair Oil"
+                        data-type="product">
+                        Order Product
+                    </button>
+                </article>
+
+            </div>
+        </section>
+        <section id="memberServices">
+            <h2>Our Beauty Services</h2>
+
+            <div class="service-container">
+
+                <article class="service-card">
+                    <img src="image/braiding.jpeg"
+                         alt="Hair Braiding"
+                         loading="lazy">
+
+                    <h3>Hair Braiding</h3>
+                    <p>Price: ₦8,000 and above</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Hair Braiding"
+                        data-type="appointment">
+                        Book Service
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <img src="image/retouching.webp"
+                         alt="Hair Retouching"
+                         loading="lazy">
+
+                    <h3>Hair Retouching</h3>
+                    <p>Price: ₦5,000 and above</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Hair Retouching"
+                        data-type="appointment">
+                        Book Service
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <img src="image/wig.webp"
+                         alt="Wig Installation"
+                         loading="lazy">
+
+                    <h3>Wig Installation</h3>
+                    <p>Price: ₦7,000 and above</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Wig Installation"
+                        data-type="appointment">
+                        Book Service
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <img src="image/nail.jpg"
+                         alt="Manicure"
+                         loading="lazy">
+
+                    <h3>Manicure</h3>
+                    <p>Price: ₦3,000 and above</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Manicure"
+                        data-type="appointment">
+                        Book Service
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <img src="image/pedicure.webp"
+                         alt="Pedicure"
+                         loading="lazy">
+
+                    <h3>Pedicure</h3>
+                    <p>Price: ₦4,000 and above</p>
+
+                    <button
+                        type="button"
+                        class="select-item"
+                        data-item="Pedicure"
+                        data-type="appointment">
+                        Book Service
+                    </button>
+                </article>
+
+            </div>
+        </section>
+        <section id="bookingFormSection">
+            <h2>Book an Appointment or Order a Product</h2>
+
+            <form id="memberBookingForm">
+
+                <div class="form-group">
+                    <label for="customerName">Full Name</label>
+                    <input
+                        type="text"
+                        id="customerName"
+                        name="customerName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        name="customerPhone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="requestType">Request Type</label>
+                    <select id="requestType" name="requestType" required>
+                        <option value="">Select request type</option>
+                        <option value="appointment">Book an Appointment</option>
+                        <option value="product">Order a Product</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="selectedItem">Select Service or Product</label>
+                    <select id="selectedItem" name="selectedItem" required>
+                        <option value="">Select an item</option>
+
+                        <optgroup label="Hair Services">
+                            <option value="Hair Braiding" data-price="8000">
+                                Hair Braiding - ₦8,000 and above
+                            </option>
+                            <option value="Hair Retouching" data-price="5000">
+                                Hair Retouching - ₦5,000 and above
+                            </option>
+                            <option value="Wig Installation" data-price="7000">
+                                Wig Installation - ₦7,000 and above
+                            </option>
+                        </optgroup>
+
+                        <optgroup label="Nail Services">
+                            <option value="Manicure" data-price="3000">
+                                Manicure - ₦3,000 and above
+                            </option>
+                            <option value="Pedicure" data-price="4000">
+                                Pedicure - ₦4,000 and above
+                            </option>
+                        </optgroup>
+
+                        <optgroup label="Beauty Products">
+                            <option value="Hair Shampoo" data-price="3500">
+                                Hair Shampoo - ₦3,500
+                            </option>
+                            <option value="Hair Cream" data-price="2500">
+                                Hair Cream - ₦2,500
+                            </option>
+                            <option value="Hair Oil" data-price="2000">
+                                Hair Oil - ₦2,000
+                            </option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        value="1"
+                        required
+                    >
+                </div>
+                <div id="appointmentDetails">
+                    <h3>Appointment Details</h3>
+
+                    <div class="form-group">
+                        <label for="appointmentDate">Preferred Date</label>
+                        <input
+                            type="date"
+                            id="appointmentDate"
+                            name="appointmentDate"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointmentTime">Preferred Time</label>
+                        <input
+                            type="time"
+                            id="appointmentTime"
+                            name="appointmentTime"
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerNotes">Additional Information</label>
+                    <textarea
+                        id="customerNotes"
+                        name="customerNotes"
+                        rows="4"
+                        placeholder="Enter any special requests"
+                    ></textarea>
+                </div>
+                <section id="paymentDetails">
+                    <h3>Payment Information</h3>
+
+                    <p>
+                        <strong>Appointments:</strong>
+                        A 70% deposit of the confirmed service price
+                        is required.
+                    </p>
+
+                    <p>
+                        <strong>Product Orders:</strong>
+                        Full payment (100%) is required.
+                    </p>
+
+                    <p>
+                        Requests remain pending until payment is
+                        verified by Pristine Luxes Hub.
+                    </p>
+
+                    <p>
+                        Item Price:
+                        <span id="itemPrice">₦0</span>
+                    </p>
+
+                    <p>
+                        Total Amount:
+                        <span id="totalAmount">₦0</span>
+                    </p>
+
+                    <p>
+                        Required Payment:
+                        <span id="requiredPayment">₦0</span>
+                    </p>
+
+                    <p>
+                        Remaining Balance:
+                        <span id="remainingBalance">₦0</span>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Select payment method</option>
+                            <option value="Bank Transfer">Bank Transfer</option>
+                            <option value="POS">POS</option>
+                            <option value="Cash">Cash</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amountPaid">Amount Paid (₦)</label>
+                        <input
+                            type="number"
+                            id="amountPaid"
+                            name="amountPaid"
+                            min="0"
+                            placeholder="Enter amount paid"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transactionReference">
+                            Transaction Reference
+                        </label>
+                        <input
+                            type="text"
+                            id="transactionReference"
+                            name="transactionReference"
+                            placeholder="Enter transaction reference"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentEvidence">
+                            Payment Evidence (Optional)
+                        </label>
+                        <input
+                            type="file"
+                            id="paymentEvidence"
+                            name="paymentEvidence"
+                            accept="image/*,.pdf"
+                        >
+                    </div>
+
+                    <p id="paymentMessage" aria-live="polite"></p>
+                </section>
+
+                <button type="submit" id="submitRequest">
+                    Submit Booking or Order
+                </button>
+
+                <p id="formMessage" aria-live="polite"></p>
+
+            </form>
+        </section>
+        <section id="memberContact">
+            <h2>Contact Us</h2>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:+2347035441983">+2347035441983</a>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:amaizuebere@gmail.com">
+                    amaizuebere@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                Shop 1 Austin Ndigwe Avenue, Mopol Base, Agu Awka.
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2026 Pristine Luxes Hub.
+            Look Good, Feel Good and Be Pristine.
+        </p>
+    </footer>
+
+    <script src="member.js"></script>
+
+</body>
+</html>
